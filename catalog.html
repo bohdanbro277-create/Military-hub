@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#062b1e">
+  <title>Каталог — Military Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Chakra+Petch:wght@300;600&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/categories.css">
+  <link rel="stylesheet" href="style/futuristic.css">
+  <style>
+    .catalog-header {
+      text-align: center;
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    
+    .catalog-title {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 3rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin: 0;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 2px;
+      text-shadow: 0 0 20px rgba(0,208,135,0.4);
+    }
+
+    .catalog-title::after {
+      content: '';
+      position: absolute;
+      left: -20%;
+      right: -20%;
+      height: 1px;
+      bottom: -10px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .category-card {
+      background: linear-gradient(165deg, rgba(255,255,255,0.03), rgba(0,0,0,0.2));
+      border: 1px solid rgba(0,208,135,0.1);
+      border-radius: 15px;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      border-color: var(--accent);
+      box-shadow: 0 10px 30px rgba(0,208,135,0.2);
+    }
+
+    .category-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(0,208,135,0.1), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .category-card:hover::before {
+      opacity: 1;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      filter: contrast(1.1) brightness(0.9);
+      transition: all 0.3s ease;
+    }
+
+    .category-card:hover img {
+      transform: scale(1.05);
+      filter: contrast(1.2) brightness(1);
+    }
+
+    .category-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin: 0.5rem 0;
+    }
+
+    .category-card p {
+      color: var(--muted);
+      margin: 0.5rem 0 1rem;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .cyber-btn {
+      background: linear-gradient(90deg, var(--accent-2), var(--accent));
+      border: none;
+      padding: 0.8rem 1.5rem;
+      color: var(--bg-900);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cyber-btn::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255,255,255,0.3),
+        transparent
+      );
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+
+    .cyber-btn:hover::before {
+      transform: translateX(100%);
+    }
+
+    .cyber-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,208,135,0.4);
+    }
+
+    .back-btn {
+      margin-bottom: 2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    .back-btn::before {
+      content: '←';
+      font-size: 1.2em;
+      transition: transform 0.3s ease;
+    }
+
+    .back-btn:hover::before {
+      transform: translateX(-5px);
+    }
+
+    .category-section {
+      background: linear-gradient(165deg, rgba(255,255,255,0.02), transparent);
+      border: 1px solid rgba(0,208,135,0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .category-section h3 {
+      font-family: 'Chakra Petch', sans-serif;
+      color: var(--accent);
+      font-size: 2rem;
+      margin: 0 0 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Military Hub</h1>
+      <nav class="main-nav">
+        <a href="index.html">Головна</a>
+        <a href="catalog.html" class="active">Каталог</a>
+        <a href="about.html">Про нас</a>
+        <a href="contact.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="catalog-header">
+      <h2 class="catalog-title">Каталог товарів</h2>
+    </div>
+    
+    <div class="categories-grid">
+      <div class="category-card" data-category="boots">
+        <img src="images/foto 2.jpg" alt="Берци">
+        <h3>Берци</h3>
+        <p>Тактичне взуття для військових</p>
+        <button class="cyber-btn show-category" data-target="#boots">
+          Відкрити асортимент
+        </button>
+      </div>
+
+      <div class="category-card" data-category="packs">
+        <img src="images/foto 20.jpg" alt="Рюкзаки">
+        <h3>Рюкзаки</h3>
+        <p>Тактичні та туристичні рюкзаки</p>
+        <button class="cyber-btn show-category" data-target="#packs">
+          Відкрити асортимент
+        </button>
+      </div>
+
+      <div class="category-card" data-category="clothing">
+        <img src="images/foto 71.jpg" alt="Військовий одяг">
+        <h3>Військовий одяг</h3>
+        <p>Форма та спорядження</p>
+        <button class="cyber-btn show-category" data-target="#clothing">
+          Відкрити асортимент
+        </button>
+      </div>
+
+      <div class="category-card" data-category="helmets">
+        <img src="images/foto 72.jpg" alt="Каски">
+        <h3>Каски</h3>
+        <p>Захисні шоломи та каски</p>
+        <button class="cyber-btn show-category" data-target="#helmets">
+          Відкрити асортимент
+        </button>
+      </div>
+
+      <div class="category-card" data-category="plates">
+        <img src="images/foto 56.jpg" alt="Плитоноски">
+        <h3>Плитоноски</h3>
+        <p>Плитоноски та бронежилети</p>
+        <button class="cyber-btn show-category" data-target="#plates">
+          Відкрити асортимент
+        </button>
+      </div>
+
+      <div class="category-card" data-category="patches">
+        <img src="images/foto 73.jpg" alt="Шеврони">
+        <h3>Шеврони</h3>
+        <p>Військові шеврони</p>
+        <button class="cyber-btn show-category" data-target="#patches">
+          Відкрити асортимент
+        </button>
+      </div>
+    </div>
+
+    <div id="category-content" style="display: none">
+      <button class="cyber-btn back-btn">Назад до категорій</button>
+      
+      <div id="boots" class="category-section">
+        <h3>Берци</h3>
+        <div class="products"></div>
+      </div>
+
+      <div id="packs" class="category-section">
+        <h3>Рюкзаки</h3>
+        <div class="products"></div>
+      </div>
+
+      <div id="clothing" class="category-section">
+        <h3>Військовий одяг</h3>
+        <div class="products"></div>
+      </div>
+
+      <div id="helmets" class="category-section">
+        <h3>Каски</h3>
+        <div class="products"></div>
+      </div>
+
+      <div id="plates" class="category-section">
+        <h3>Плитоноски</h3>
+        <div class="products"></div>
+      </div>
+
+      <div id="patches" class="category-section">
+        <h3>Шеврони</h3>
+        <div class="products"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Military Hub</p>
+    </div>
+  </footer>
+
+  <script src="js/catalog.js"></script>
+</body>
+</html>
