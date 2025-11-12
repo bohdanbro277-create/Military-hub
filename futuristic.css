@@ -1,0 +1,259 @@
+/* Футуристичні карточки товарів */
+.product {
+  position: relative;
+  padding: 1.2rem;
+  border-radius: 16px;
+  background: linear-gradient(165deg, rgba(255,255,255,0.03) 0%, rgba(0,208,135,0.02) 100%);
+  border: 1px solid rgba(0,208,135,0.1);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.product::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.3;
+}
+
+.product::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent), transparent);
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,208,135,0.15);
+}
+
+.product:hover::after {
+  opacity: 0.2;
+}
+
+.product img {
+  width: 100%;
+  height: 220px !important;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(0,208,135,0.1);
+  transition: transform 0.3s ease;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.product:hover img {
+  transform: scale(1.03);
+}
+
+.product h4 {
+  margin: 1rem 0 0.5rem;
+  color: var(--accent);
+  font-size: 1.2rem;
+  text-shadow: 0 0 15px rgba(0,208,135,0.3);
+}
+
+.product .price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0.8rem 0;
+  text-shadow: 0 0 20px rgba(0,208,135,0.4);
+}
+
+.product .btn {
+  width: 100%;
+  background: linear-gradient(45deg, var(--accent), var(--accent-2));
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product .btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: rotate(45deg);
+  transition: transform 0.5s ease;
+}
+
+.product .btn:hover::before {
+  transform: translate(50%, 50%) rotate(45deg);
+}
+
+/* Анімована рамка для каталогу */
+.category-section {
+  position: relative;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(0,208,135,0.05) 0%, rgba(0,0,0,0.3) 100%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.category-section::before,
+.category-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.category-section::before {
+  background: linear-gradient(90deg, var(--accent), transparent, var(--accent));
+  background-size: 200% 100%;
+  animation: borderGlow 8s linear infinite;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.category-section::after {
+  background: linear-gradient(180deg, rgba(0,208,135,0.1), transparent);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+}
+
+@keyframes borderGlow {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Неонові заголовки */
+.category-section h2 {
+  color: var(--accent);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(0,208,135,0.5),
+               0 0 20px rgba(0,208,135,0.3),
+               0 0 30px rgba(0,208,135,0.2);
+  animation: titlePulse 3s ease-in-out infinite;
+}
+
+@keyframes titlePulse {
+  0%, 100% { text-shadow: 0 0 10px rgba(0,208,135,0.5),
+                          0 0 20px rgba(0,208,135,0.3),
+                          0 0 30px rgba(0,208,135,0.2); }
+  50% { text-shadow: 0 0 15px rgba(0,208,135,0.7),
+                     0 0 25px rgba(0,208,135,0.5),
+                     0 0 35px rgba(0,208,135,0.3); }
+}
+
+/* Сітка товарів з анімацією появи */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.products .product {
+  animation: productAppear 0.6s ease-out backwards;
+}
+
+@keyframes productAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Інтерактивна навігація категорій */
+.category-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  background: linear-gradient(45deg, var(--bg-800), var(--bg-900));
+  border: 1px solid rgba(0,208,135,0.2);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-btn::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(45deg, transparent, rgba(0,208,135,0.2), transparent);
+  transform: rotate(45deg);
+  transition: transform 0.5s ease;
+}
+
+.category-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,208,135,0.2);
+}
+
+.category-btn:hover::before {
+  transform: translate(50%, 50%) rotate(45deg);
+}
+
+.category-btn.active {
+  background: linear-gradient(45deg, var(--accent), var(--accent-2));
+  color: #000;
+  box-shadow: 0 5px 15px rgba(0,208,135,0.3);
+}
+
+/* Футуристичний скролбар */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-2);
+}
