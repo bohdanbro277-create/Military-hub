@@ -1,0 +1,90 @@
+/* Базові стилі */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.category-card {
+  display: block;
+  background: linear-gradient(180deg, var(--glass), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0,208,135,0.08);
+}
+
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.category-card h3 {
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.category-card p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Декоративний елемент */
+.category-card::before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0,208,135,0.08), transparent);
+  transform: rotate(35deg);
+  pointer-events: none;
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover::before {
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  .category-card img {
+    height: 160px;
+  }
+  
+  .category-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+}

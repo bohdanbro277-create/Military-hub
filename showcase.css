@@ -1,0 +1,117 @@
+.categories-showcase {
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.categories-showcase h2 {
+  text-align: center;
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(0,208,135,0.4);
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.showcase-card {
+  position: relative;
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.showcase-card:hover {
+  transform: translateY(-10px);
+}
+
+.showcase-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, 
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.4) 50%,
+    rgba(0,0,0,0.8) 100%
+  );
+  z-index: 1;
+}
+
+.showcase-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.showcase-card:hover img {
+  transform: scale(1.05);
+}
+
+.showcase-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  z-index: 2;
+  color: #fff;
+}
+
+.showcase-title {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.showcase-subtitle {
+  color: var(--accent);
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.showcase-btn {
+  display: inline-block;
+  background: rgba(0,208,135,0.2);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.showcase-btn:hover {
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .categories-showcase h2 {
+    font-size: 2rem;
+  }
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .showcase-title {
+    font-size: 1.5rem;
+  }
+}
