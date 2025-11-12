@@ -1,0 +1,69 @@
+/* Темна футуристична тема — Military Hub */
+:root {
+	--bg-900: #04120f; /* дуже темний фон */
+	--bg-800: #071712;
+	--accent: #06f389; /* неоново-зелений */
+	--accent-2: #0ef0a0;
+	--muted: #8aa39a;
+	--card: rgba(255,255,255,0.03);
+	--glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box}
+body{
+	font-family: 'Orbitron', "Segoe UI", Roboto, Arial, sans-serif;
+	margin:0;
+	background: radial-gradient(1200px 600px at 10% 10%, rgba(6,243,137,0.04), transparent),
+							linear-gradient(180deg, var(--bg-900) 0%, var(--bg-800) 100%);
+	color:#dffaf0;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+
+.site-header{backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));border-bottom:1px solid rgba(255,255,255,0.04)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;padding:0.5rem 0;font-weight:700;letter-spacing:1px;color:var(--accent)}
+.main-nav a{margin:0 0.8rem;color:rgba(223,250,240,0.85);text-decoration:none;position:relative;padding:0.25rem}
+.main-nav a::after{content:'';position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg, transparent, var(--accent), transparent);bottom:-4px;opacity:0;transition:opacity 180ms}
+.main-nav a:hover::after{opacity:1}
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.6rem;color:var(--accent)}
+
+.hero{padding:3.5rem 0;text-align:center;background:linear-gradient(90deg, rgba(6,243,137,0.03), rgba(0,0,0,0));border-bottom:1px solid rgba(255,255,255,0.02)}
+.hero h2{margin:0 0 0.6rem;font-size:2rem;color:var(--accent);text-shadow:0 0 12px rgba(6,243,137,0.15)}
+.hero p{color:var(--muted);max-width:800px;margin:0 auto}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#02211a;padding:0.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(6,243,137,0.12), inset 0 -2px 6px rgba(0,0,0,0.15);transition:transform 160ms}
+.btn:hover{transform:translateY(-3px)}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;padding:2rem 0}
+.features article{background:var(--glass);padding:1rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+
+.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:1rem}
+.category-card{display:block;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:0.6rem;border:1px solid rgba(255,255,255,0.04);text-align:center;text-decoration:none;color:inherit;border-radius:10px;box-shadow:0 8px 30px rgba(2,33,26,0.25)}
+.category-card img{width:100%;height:120px;object-fit:cover;border-radius:6px;filter:grayscale(10%) contrast(1.05)}
+
+.category-section{margin:2rem 0;padding:1.2rem;background:var(--card);border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.product{padding:0.8rem;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.02);box-shadow:0 8px 24px rgba(0,0,0,0.45)}
+.product h4{color:var(--accent);margin:0 0 0.4rem}
+
+.site-footer{padding:1.2rem 0;text-align:center;color:var(--muted);margin-top:2rem;border-top:1px solid rgba(255,255,255,0.02)}
+
+.contact-form{display:grid;gap:0.6rem;max-width:560px}
+.contact-form label{display:flex;flex-direction:column;font-size:0.95rem;color:rgba(223,250,240,0.9)}
+.contact-form input,.contact-form textarea{padding:0.7rem;border:1px solid rgba(255,255,255,0.06);border-radius:8px;background:transparent;color:inherit}
+.contact-form button{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#02211a;padding:0.7rem 1rem;border-radius:8px;border:0;font-weight:700;cursor:pointer}
+
+/* Accent glow for focus */
+input:focus,textarea:focus,button:focus{outline:none;box-shadow:0 0 18px rgba(6,243,137,0.14)}
+
+@media(max-width:900px){.container{padding:1rem}.hero h2{font-size:1.6rem}}
+@media(max-width:720px){.main-nav{display:none}.nav-toggle{display:inline-block}}
+
+/* Невеликий візуальний ефект для курсору */
+a,button{transition:all 160ms ease}
+
+/* Доп. відступи */
+.container { padding-left: 1rem; padding-right: 1rem; }
+
