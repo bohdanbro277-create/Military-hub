@@ -1,0 +1,589 @@
+[
+  {
+    "id": "boots-2",
+    "category": "Тактичне взуття",
+    "title": "5.11 Tactical A.T.A.C.",
+    "image": "images/foto 2.jpg",
+    "price_uah": 1499,
+    "description": "Універсальні берци для польових умов."
+  },
+  {
+    "id": "boots-3",
+    "category": "Тактичне взуття",
+    "title": "Lowa Zephyr GTX",
+    "image": "images/foto 3.jpg",
+    "price_uah": 1599,
+    "description": "Зносостійкі берци з амортизацією."
+  },
+  {
+    "id": "boots-4",
+    "category": "Тактичне взуття",
+    "title": "Danner Tachyon",
+    "image": "images/foto 4.jpg",
+    "price_uah": 1799,
+    "description": "Підвищена комфортність для довгих маршей."
+  },
+  {
+    "id": "boots-5",
+    "category": "Берци",
+    "title": "Salomon Quest 4D GTX",
+    "image": "images/foto 5.jpg",
+    "price_uah": 1299,
+    "description": "Легкі берци для швидких операцій."
+  },
+  {
+    "id": "boots-6",
+    "category": "Берци",
+    "title": "Magnum Elite Spider",
+    "image": "images/foto 6.jpg",
+    "price_uah": 1999,
+    "description": "Посилена підошва та захист гомілки."
+  },
+  {
+    "id": "boots-7",
+    "category": "Берци",
+    "title": "Haix Black Eagle Tactical",
+    "image": "images/foto 7.jpg",
+    "price_uah": 2199,
+    "description": "Тактичні берци з водовідштовхувальною обробкою."
+  },
+  {
+    "id": "boots-8",
+    "category": "Берци",
+    "title": "Under Armour Valsetz",
+    "image": "images/foto 8.jpg",
+    "price_uah": 1699,
+    "description": "Комфортна колодка, підходять для тривалого носіння."
+  },
+  {
+    "id": "boots-9",
+    "category": "Берци",
+    "title": "Mil-Tec Security",
+    "image": "images/foto 9.jpg",
+    "price_uah": 1399,
+    "description": "Бюджетна, але надійна модель."
+  },
+  {
+    "id": "boots-10",
+    "category": "Берци",
+    "title": "Oakley Light Assault 2",
+    "image": "images/foto 10.jpg",
+    "price_uah": 2499,
+    "description": "Посилений захист, армована підошва."
+  },
+  {
+    "id": "boots-11",
+    "category": "Берци",
+    "title": "Garmont T8 Bifida",
+    "image": "images/foto 11.jpg",
+    "price_uah": 2599,
+    "description": "Преміум-модель з додатковим комфортом."
+  },
+  {
+    "id": "boots-12",
+    "category": "Берци",
+    "title": "Bates GX-8 Gore-Tex",
+    "image": "images/foto 12.jpg",
+    "price_uah": 1899,
+    "description": "Модель для різних погодних умов."
+  },
+  {
+    "id": "boots-13",
+    "category": "Берци",
+    "title": "Belleville One Xero",
+    "image": "images/foto 13.jpg",
+    "price_uah": 1699,
+    "description": "Легка, дихаюча конструкція."
+  },
+  {
+    "id": "boots-14",
+    "category": "Берци",
+    "title": "Берци 14",
+    "image": "images/foto 14.jpg",
+    "price_uah": 1499,
+    "description": "Класична модель для повсякденного використання."
+  },
+  {
+    "id": "boots-15",
+    "category": "Берци",
+    "title": "Берци 15",
+    "image": "images/foto 15.jpg",
+    "price_uah": 1799,
+    "description": "Надійна фіксація щиколотки, зручна підошва."
+  },
+  {
+    "id": "boots-16",
+    "category": "Берци",
+    "title": "Берци 16",
+    "image": "images/foto 16.jpg",
+    "price_uah": 2099,
+    "description": "Сучасні матеріали для підвищеної витривалості."
+  },
+  {
+    "id": "boots-17",
+    "category": "Берци",
+    "title": "Берци 17",
+    "image": "images/foto 17.jpg",
+    "price_uah": 2299,
+    "description": "Тактичні берци з додатковою ізоляцією."
+  },
+  {
+    "id": "boots-18",
+    "category": "Берци",
+    "title": "Берци 18",
+    "image": "images/foto 18.jpg",
+    "price_uah": 2399,
+    "description": "Професійна модель для складних умов."
+  },
+  {
+    "id": "boots-19",
+    "category": "Берци",
+    "title": "Берци 19",
+    "image": "images/foto 19.jpg",
+    "price_uah": 1999,
+    "description": "Універсальна модель середнього цінового сегменту."
+  }
+  ,
+  {
+    "id": "pack-20",
+    "category": "Рюкзаки",
+    "title": "5.11 Tactical RUSH24",
+    "image": "images/foto 20.jpg",
+    "price_uah": 1299,
+    "description": "Компактний рюкзак для денних операцій, водовідштовхувальний матеріал."
+  },
+  {
+    "id": "pack-21",
+    "category": "Рюкзаки",
+    "title": "Condor 3-Day Assault",
+    "image": "images/foto 21.jpg",
+    "price_uah": 1599,
+    "description": "Ергономічна спинка та кілька секцій для спорядження."
+  },
+  {
+    "id": "pack-22",
+    "category": "Рюкзаки",
+    "title": "Maxpedition Falcon-II",
+    "image": "images/foto 22.jpg",
+    "price_uah": 1799,
+    "description": "Модульний рюкзак з системою кріплень MOLLE для додаткових підсумків."
+  },
+  {
+    "id": "pack-23",
+    "category": "Рюкзаки",
+    "title": "Direct Action Dragon Egg",
+    "image": "images/foto 23.jpg",
+    "price_uah": 1399,
+    "description": "Легкий рюкзак для швидких марш-кидків, з регульованими лямками."
+  },
+  {
+    "id": "pack-24",
+    "category": "Рюкзаки",
+    "title": "Mystery Ranch 2-Day Assault",
+    "image": "images/foto 24.jpg",
+    "price_uah": 1999,
+    "description": "Рюкзак середнього об'єму з підсиленим днищем і захисним покриттям."
+  },
+  {
+    "id": "pack-25",
+    "category": "Рюкзаки",
+    "title": "Helikon-Tex EDC Lite",
+    "image": "images/foto 25.jpg",
+    "price_uah": 2199,
+    "description": "Польовий рюкзак з продуманою системою органайзерів та кліпсами."
+  },
+  {
+    "id": "pack-26",
+    "category": "Рюкзаки",
+    "title": "First Tactical Specialist 1-Day",
+    "image": "images/foto 26.jpg",
+    "price_uah": 1899,
+    "description": "Тактичний рюкзак середнього розміру."
+  },
+  {
+    "id": "gloves-1",
+    "category": "Рукавиці",
+    "title": "Mechanix M-Pact",
+    "image": "images/gloves1.jpg",
+    "price_uah": 799,
+    "description": "Тактичні рукавиці з захистом суглобів"
+  },
+  {
+    "id": "gloves-2",
+    "category": "Рукавиці",
+    "title": "5.11 Hard Time",
+    "image": "images/gloves2.jpg",
+    "price_uah": 899,
+    "description": "Зимові тактичні рукавиці"
+  },
+  {
+    "id": "gloves-3",
+    "category": "Рукавиці",
+    "title": "Oakley Factory Pilot",
+    "image": "images/gloves3.jpg",
+    "price_uah": 1099,
+    "description": "Професійні тактичні рукавиці"
+  },
+  {
+    "id": "watch-1",
+    "category": "Годинники",
+    "title": "Garmin Tactix Delta",
+    "image": "images/watch1.jpg",
+    "price_uah": 29999,
+    "description": "Тактичний смарт-годинник з GPS"
+  },
+  {
+    "id": "watch-2",
+    "category": "Годинники",
+    "title": "Suunto Core All Black",
+    "image": "images/watch2.jpg",
+    "price_uah": 8999,
+    "description": "Військовий годинник з компасом"
+  },
+  {
+    "id": "watch-3",
+    "category": "Годинники",
+    "title": "Casio G-Shock GG-B100",
+    "image": "images/watch3.jpg",
+    "price_uah": 12999,
+    "description": "Захищений годинник для екстремальних умов"
+  },
+  {
+    "id": "patch-1",
+    "category": "Шеврони",
+    "title": "Шеврон ЗСУ",
+    "image": "images/patch1.jpg",
+    "price_uah": 199,
+    "description": "Офіційний шеврон ЗСУ"
+  },
+  {
+    "id": "patch-2",
+    "category": "Шеврони",
+    "title": "Шеврон Спецназ",
+    "image": "images/patch2.jpg",
+    "price_uah": 249,
+    "description": "Тактичний шеврон спецпідрозділу"
+  },
+  {
+    "id": "patch-3",
+    "category": "Шеврони",
+    "title": "Шеврон Медик",
+    "image": "images/patch3.jpg",
+    "price_uah": 199,
+    "description": "Медичний шеврон з світловідбивачем"
+  },
+  {
+    "id": "pack-27",
+    "category": "Рюкзаки",
+    "title": "Cannae Pro Legion Elite",
+    "image": "images/foto 27.jpg",
+    "price_uah": 1899,
+    "description": "Рюкзак з відділенням для гідрації і додатковими кишенями."
+  },
+  {
+    "id": "pack-28",
+    "category": "Рюкзаки",
+    "title": "BLACKHAWK! Cyane Dynamic",
+    "image": "images/foto 28.jpg",
+    "price_uah": 2399,
+    "description": "Рюкзак великої ємності з каркасною підтримкою та підсиленими швами."
+  },
+  {
+    "id": "pack-29",
+    "category": "Рюкзаки",
+    "title": "Vertx Gamut 2.0",
+    "image": "images/foto 29.jpg",
+    "price_uah": 2599,
+    "description": "Преміум-варіант з підвищеною ергономікою та стійкими матеріалами."
+  },
+  {
+    "id": "pack-30",
+    "category": "Рюкзаки",
+    "title": "GORUCK GR1",
+    "image": "images/foto 30.jpg",
+    "price_uah": 1499,
+    "description": "Тактичний рюкзак початкового рівня з достатнім об'ємом для екіпірування."
+  },
+  {
+    "id": "pack-31",
+    "category": "Рюкзаки",
+    "title": "Hill People Gear Aston House",
+    "image": "images/foto 31.jpg",
+    "price_uah": 1799,
+    "description": "Міцні блискавки та посилений каркас для важких вантажів."
+  },
+  {
+    "id": "pack-32",
+    "category": "Рюкзаки",
+    "title": "Eberlestock Gunslinger II",
+    "image": "images/foto 32.jpg",
+    "price_uah": 2099,
+    "description": "Рюкзак зі спеціальними кишенями для електроніки та інструментів."
+  },
+  {
+    "id": "pack-33",
+    "category": "Рюкзаки",
+    "title": "Vanquest TRIDENT-31",
+    "image": "images/foto 33.jpg",
+    "price_uah": 1999,
+    "description": "Середній рюкзак з комфортною системою навантаження."
+  },
+  {
+    "id": "pack-34",
+    "category": "Рюкзаки",
+    "title": "LBX Tactical Titan",
+    "image": "images/foto 34.jpg",
+    "price_uah": 2299,
+    "description": "Рюкзак для довготривалих виходів з варіативною системою жилетування."
+  },
+  {
+    "id": "pack-35",
+    "category": "Рюкзаки",
+    "title": "KUIU Ultra 6000",
+    "image": "images/foto 35.jpg",
+    "price_uah": 2499,
+    "description": "Водонепроникне покриття та додаткові підсумки в комплекті."
+  },
+  {
+    "id": "pack-36",
+    "category": "Рюкзаки",
+    "title": "Kifaru Crater",
+    "image": "images/foto 36.jpg",
+    "price_uah": 2699,
+    "description": "Високоякісні матеріали, розробка для важких умов експлуатації."
+  },
+  {
+    "id": "pack-37",
+    "category": "Рюкзаки",
+    "title": "Triple Aught Design FAST Pack EDC",
+    "image": "images/foto 37.jpg",
+    "price_uah": 2899,
+    "description": "Професійний рюкзак з великою місткістю та зручним доступом до відділень."
+  }
+  ,
+  {
+    "id": "plate-43",
+    "category": "Плитоноски",
+    "title": "PlateCarrier Compact 43",
+    "image": "images/foto 43.jpg",
+    "price_uah": 3299,
+    "description": "Легка плитоноска для швидких виходів, розмір S/M."
+  },
+  {
+    "id": "plate-44",
+    "category": "Плитоноски",
+    "title": "ArmourFlex 44",
+    "image": "images/foto 44.jpg",
+    "price_uah": 3799,
+    "description": "Міцна плитоноска з модульною системою кріплень."
+  },
+  {
+    "id": "plate-45",
+    "category": "Плитоноски",
+    "title": "StealthPlate 45",
+    "image": "images/foto 45.jpg",
+    "price_uah": 4199,
+    "description": "Панель з підвищеним захистом і анатомічною формою."
+  },
+  {
+    "id": "plate-46",
+    "category": "Плитоноски",
+    "title": "Tactical Lite 46",
+    "image": "images/foto 46.jpg",
+    "price_uah": 2899,
+    "description": "Економічна плитоноска для щоденного використання."
+  },
+  {
+    "id": "plate-47",
+    "category": "Плитоноски",
+    "title": "ReconGuard 47",
+    "image": "images/foto 47.jpg",
+    "price_uah": 4599,
+    "description": "Плитоноска з додатковими підсумками для устаткування."
+  },
+  {
+    "id": "plate-48",
+    "category": "Плитоноски",
+    "title": "PatrolCore 48",
+    "image": "images/foto 48.jpg",
+    "price_uah": 3499,
+    "description": "Комфортна плитоноска з регульованою спинкою."
+  },
+  {
+    "id": "plate-49",
+    "category": "Плитоноски",
+    "title": "OpsShield 49",
+    "image": "images/foto 49.jpg",
+    "price_uah": 3999,
+    "description": "Універсальна система захисту з модульною планкою."
+  },
+  {
+    "id": "plate-50",
+    "category": "Плитоноски",
+    "title": "Frontline 50",
+    "image": "images/foto 50.jpg",
+    "price_uah": 4999,
+    "description": "Професійна плитоноска з місцем для бронепанелей." 
+  },
+  {
+    "id": "plate-51",
+    "category": "Плитоноски",
+    "title": "SwiftPlate 51",
+    "image": "images/foto 51.jpg",
+    "price_uah": 3199,
+    "description": "Легка і дихаюча конструкція для тривалих місій."
+  },
+  {
+    "id": "plate-52",
+    "category": "Плитоноски",
+    "title": "Defender 52",
+    "image": "images/foto 52.jpg",
+    "price_uah": 4299,
+    "description": "Посилена плитоноска з додатковим підсилювачем спини."
+  },
+  {
+    "id": "plate-53",
+    "category": "Плитоноски",
+    "title": "Vanguard 53",
+    "image": "images/foto 53.jpg",
+    "price_uah": 3799,
+    "description": "Модульна плитоноска з регульованими ременями."
+  },
+  {
+    "id": "plate-54",
+    "category": "Плитоноски",
+    "title": "Ranger 54",
+    "image": "images/foto 54.jpg",
+    "price_uah": 3599,
+    "description": "Комфортна плитоноска для польових умов з кишенею для балансу."
+  },
+  {
+    "id": "plate-55",
+    "category": "Плитоноски",
+    "title": "Aegis 55",
+    "image": "images/foto 55.jpg",
+    "price_uah": 5499,
+    "description": "Підвищений рівень захисту для спецоперацій."
+  },
+  {
+    "id": "plate-56",
+    "category": "Плитоноски",
+    "title": "Titan 56",
+    "image": "images/foto 56.jpg",
+    "price_uah": 5999,
+    "description": "Тяжка плитоноска для максимального захисту."
+  },
+  {
+    "id": "plate-57",
+    "category": "Плитоноски",
+    "title": "UrbanShield 57",
+    "image": "images/foto 57.jpg",
+    "price_uah": 3399,
+    "description": "Компактна плитоноска для міських умов."
+  },
+  {
+    "id": "plate-58",
+    "category": "Плитоноски",
+    "title": "FieldMaster 58",
+    "image": "images/foto 58.jpg",
+    "price_uah": 3699,
+    "description": "Збалансована плитоноска для тривалих виходів."
+  },
+  {
+    "id": "plate-59",
+    "category": "Плитоноски",
+    "title": "Sentinel 59",
+    "image": "images/foto 59.jpg",
+    "price_uah": 3899,
+    "description": "Міцна та надійна плитоноска з додатковими кишенями."
+  },
+  {
+    "id": "plate-60",
+    "category": "Плитоноски",
+    "title": "Cerberus 60",
+    "image": "images/foto 60.jpg",
+    "price_uah": 6299,
+    "description": "Преміум-плитоноска з мультифункціональними модулемами."
+  }
+  ,
+  {
+    "id": "cloth-61",
+    "category": "Військовий одяг",
+    "title": "Combat Shirt 61",
+    "image": "images/foto 61.jpg",
+    "price_uah": 899,
+    "description": "Легка тактична сорочка з підсиленими швами для польових умов."
+  },
+  {
+    "id": "cloth-62",
+    "category": "Військовий одяг",
+    "title": "Field Jacket 62",
+    "image": "images/foto 62.jpg",
+    "price_uah": 2199,
+    "description": "Універсальна польова куртка з багатьма кишенями."
+  },
+  {
+    "id": "cloth-63",
+    "category": "Військовий одяг",
+    "title": "Tactical Pants 63",
+    "image": "images/foto 63.jpg",
+    "price_uah": 1399,
+    "description": "Міцні тактичні штани з захисними вставками на колінах."
+  },
+  {
+    "id": "cloth-64",
+    "category": "Військовий одяг",
+    "title": "Softshell Vest 64",
+    "image": "images/foto 64.jpg",
+    "price_uah": 1499,
+    "description": "Вітронепроникний жилет для оперативних дій."
+  },
+  {
+    "id": "cloth-65",
+    "category": "Військовий одяг",
+    "title": "ColdGear Parka 65",
+    "image": "images/foto 65.jpg",
+    "price_uah": 2999,
+    "description": "Тепла куртка для зимових операцій з утеплювачем."
+  },
+  {
+    "id": "cloth-66",
+    "category": "Військовий одяг",
+    "title": "Recon Trousers 66",
+    "image": "images/foto 66.jpg",
+    "price_uah": 1599,
+    "description": "Штани з посиленими кишенями і кріпленнями для спорядження."
+  },
+  {
+    "id": "cloth-67",
+    "category": "Військовий одяг",
+    "title": "GoreTex Smock 67",
+    "image": "images/foto 67.jpg",
+    "price_uah": 3499,
+    "description": "Непромокальна куртка з мембраною для екстремальних умов."
+  },
+  {
+    "id": "cloth-68",
+    "category": "Військовий одяг",
+    "title": "Base Layer 68",
+    "image": "images/foto 68.jpg",
+    "price_uah": 499,
+    "description": "Дихаюча термобілизна для роботи у багатьох режимах температур."
+  },
+  {
+    "id": "cloth-69",
+    "category": "Військовий одяг",
+    "title": "Plate Carrier Cover 69",
+    "image": "images/foto 69.jpg",
+    "price_uah": 799,
+    "description": "Камуфльований чохол для плитоноски з кріпленнями MOLLE."
+  },
+  {
+    "id": "cloth-70",
+    "category": "Військовий одяг",
+    "title": "Combat Gloves 70",
+    "image": "images/foto 70.jpg",
+    "price_uah": 599,
+    "description": "Захисні тактичні рукавці з протиковзким покриттям."
+  }
+]
