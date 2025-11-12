@@ -1,0 +1,116 @@
+{
+  "products": [
+    {
+      "id": "boots-2",
+      "category": "Тактичне взуття",
+      "title": "5.11 Tactical A.T.A.C.",
+      "image": "images/foto 2.jpg",
+      "price_uah": 1499,
+      "description": "Універсальні берци для польових умов"
+    },
+    {
+      "id": "boots-3",
+      "category": "Тактичне взуття",
+      "title": "Lowa Zephyr GTX",
+      "image": "images/foto 3.jpg",
+      "price_uah": 1599,
+      "description": "Зносостійкі берци з амортизацією"
+    },
+    {
+      "id": "boots-4",
+      "category": "Тактичне взуття",
+      "title": "Danner Tachyon",
+      "image": "images/foto 4.jpg",
+      "price_uah": 1799,
+      "description": "Підвищена комфортність для довгих маршей"
+    },
+    {
+      "id": "boots-5",
+      "category": "Тактичне взуття",
+      "title": "Salomon Quest 4D GTX",
+      "image": "images/foto 5.jpg",
+      "price_uah": 1299,
+      "description": "Легкі берци для швидких операцій"
+    },
+    {
+      "id": "boots-6",
+      "category": "Тактичне взуття",
+      "title": "Magnum Elite Spider",
+      "image": "images/foto 6.jpg",
+      "price_uah": 1999,
+      "description": "Посилена підошва та захист гомілки"
+    },
+    {
+      "id": "gloves-1",
+      "category": "Рукавиці",
+      "title": "Mechanix M-Pact",
+      "image": "images/gloves1.jpg",
+      "price_uah": 799,
+      "description": "Тактичні рукавиці з захистом суглобів"
+    },
+    {
+      "id": "gloves-2",
+      "category": "Рукавиці",
+      "title": "5.11 Hard Time",
+      "image": "images/gloves2.jpg",
+      "price_uah": 899,
+      "description": "Зимові тактичні рукавиці"
+    },
+    {
+      "id": "gloves-3",
+      "category": "Рукавиці",
+      "title": "Oakley Factory Pilot",
+      "image": "images/gloves3.jpg",
+      "price_uah": 1099,
+      "description": "Професійні тактичні рукавиці"
+    },
+    {
+      "id": "watch-1",
+      "category": "Годинники",
+      "title": "Garmin Tactix Delta",
+      "image": "images/watch1.jpg",
+      "price_uah": 29999,
+      "description": "Тактичний смарт-годинник з GPS"
+    },
+    {
+      "id": "watch-2",
+      "category": "Годинники",
+      "title": "Suunto Core All Black",
+      "image": "images/watch2.jpg",
+      "price_uah": 8999,
+      "description": "Військовий годинник з компасом"
+    },
+    {
+      "id": "watch-3",
+      "category": "Годинники",
+      "title": "Casio G-Shock GG-B100",
+      "image": "images/watch3.jpg",
+      "price_uah": 12999,
+      "description": "Захищений годинник для екстремальних умов"
+    },
+    {
+      "id": "patch-1",
+      "category": "Шеврони",
+      "title": "Шеврон ЗСУ",
+      "image": "images/patch1.jpg",
+      "price_uah": 199,
+      "description": "Офіційний шеврон ЗСУ"
+    },
+    {
+      "id": "patch-2",
+      "category": "Шеврони",
+      "title": "Шеврон Спецназ",
+      "image": "images/patch2.jpg",
+      "price_uah": 249,
+      "description": "Тактичний шеврон спецпідрозділу"
+    },
+    {
+      "id": "patch-3",
+      "category": "Шеврони",
+      "title": "Шеврон Медик",
+      "image": "images/patch3.jpg",
+      "price_uah": 199,
+      "description": "Медичний шеврон з світловідбивачем"
+    }
+  ]
+}
